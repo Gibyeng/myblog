@@ -1,0 +1,161 @@
+/* ---------- 全局样式 ---------- */
+
+body {
+  width: 1100px;
+
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+a:hover {
+  border-bottom: 3px solid #4fc08d;
+}
+
+.button {
+  background-color: #4fc08d ;
+  color: #fff ;
+}
+
+.avatar {
+  border-radius: 3px;
+  width: 48px;
+  height: 48px;
+  float: right;
+}
+
+.ui.segment>pre{
+  max-height: 150px;
+  overflow: hidden;
+}
+/* ---------- nav ---------- */
+
+.nav {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.nav h1 {
+  color: #4fc08d;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+/* ---------- nav-setting ---------- */
+
+.nav-setting {
+  position: fixed;
+  right: 30px;
+  top: 35px;
+  z-index: 999;
+}
+
+.nav-setting .ui.dropdown.button {
+  padding: 10px 10px 0 10px;
+  background-color: #fff !important;
+}
+
+.nav-setting .icon.bars {
+  color: #000;
+  font-size: 18px;
+}
+
+/* ---------- post-content ---------- */
+
+.post-content h3 a {
+  color: #4fc08d !important;
+}
+
+.post-content .tag {
+  font-size: 13px;
+  margin-right: 5px;
+  color: #999;
+}
+
+.post-content .tag.right {
+  float: right;
+  margin-right: 0;
+}
+
+.post-content .tag.right a {
+  color: #999;
+}
+
+/*--------topbar-----------*/
+#topbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.ui.dropdown.button{
+  background: #21ba45;
+  transition:1s;
+　-webkit-transition:1s;
+　-moz-transition:1s;
+}
+.ui.dropdown.active.button{
+  background: #21ba49;
+}
+.ui.dropdown.button:hover{
+  -webkit-transform: scale(1.5); 
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+#sidebar{
+  right: 20px;
+  top:100px;
+}
+#full-button{
+  padding: 0;
+}
+#full-button .button{
+ width: 50%;
+}
+
+.or{
+  display: inline;
+}
+
+/*--------signup-----------*/
+#signupbox .button{
+  background: #5bbd72;
+  color: #ffffff;
+}
+.inputfileouter{
+  float: left;
+  height: 30px;
+  width: 144px;
+  position:relative;
+  color: white;
+  background: #009c95;
+  border-radius: 10px;
+  text-align: center;
+}
+.inputfile{
+  width: 144px;
+  height: 41px;
+  cursor: pointer;
+  position: absolute;
+  filter:alpha(opacity=0);
+  -moz-opacity:0;
+  opacity:0; 
+  left:0px;
+  top: 0px;
+}
+.cloud.icon{
+  color: black;
+}
+.textforinput{
+  margin-top:5px;
+}
+
+/*-------posts-----------*/
+.comment{
+  height: 50px;
+}
+span.avatar>img{
+  width:40px !important;
+  height: 40px !important;
+}

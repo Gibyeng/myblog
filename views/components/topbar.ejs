@@ -1,0 +1,33 @@
+<div class="ui fixed green inverted menu center aligned segment" id = "topbar">
+	<div class = "ui floating dropdown button">
+		<i class="tree icon"></i>
+		<div class="menu">
+			<% if (user) { %>
+				<a class="item" href="/posts?author = <% user._id %>">个人主页</a>
+				<a class="item" href="/posts/create">发表文章</a>
+				<div class="divider"></div>
+				<a class="item" href="/signout">登出</a>
+			<%} else {%>
+				<a class="item" href="/signin">登录</a>
+				<div class="divider"></div>
+				<a class="item" href="./signup">注册</a>
+			<% } %>
+		</div>
+	</div>
+	<div class="ui sticky fixed top" id = "sidebar">
+		<div class="ui grid form basic segment" >
+			<div class="ui buttons sixteen wide column" id="full-button">
+				<a class="ui blue inverted button" href="/signup">注册</a>
+				<div class="or">
+				</div>
+				<a class="ui purple inverted button" href="/signin">登录</a>
+			</div>
+		</div>
+		<div class="ui red inverted center aligned segment">
+			<div class="site-status">
+			<p>欢迎访问markdown风格的博客</p>
+			<p>在这里可以记录心情、分享技术。:)</p>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,54 @@
+<%- include('header') %>
+<div class="ui grid" id="signupbox">
+	<div class='four wide column'></div>
+	<div class='eight wide column'>
+		<form class ="ui form segment" method="post" enctype="multipart/form-data">
+			<div class="field required">
+				<label for="name">用户名</label>
+				<div class="ui left icon input">
+					<input type="text" name="name" placeholder="用户名">
+					<i class="user icon"></i>
+				</div>
+			</div>
+			<div class = "field required">
+				<label for="name">密码</label>
+				<div class="ui left icon input">
+					<input type="password" name="password" placeholder="密码">
+					<i class="lock icon"></i>
+				</div>
+			</div>
+			<div class = "field required">
+				<label for="name">重复密码</label>
+				<div class = "ui left icon input">
+					<input type="password" name="repassword" placeholder="重复密码">
+					<i class="lock icon"></i>
+				</div>
+			</div>
+			<div class="field required">
+				<label>性别</label>
+				<select class="ui compact selection dropdown" name = "gender">
+					<option value="m">男</option>
+					<option value="f">女</option>
+					<option value="x">保密</option>
+				</select>
+			</div>
+			<div class="field required">
+				<label>头像</label>
+				<div class ="ui left icon input">
+					<div class = "inputfileouter">
+						<div class = "textforinput">上传头像</div>
+						<input type="file" name="avatar" class = "inputfile">
+					</div>
+					<i class="cloud upload icon"></i>
+				</div>
+			</div>
+			<div class="field required">
+				<label>个人简介</label>
+				<textarea name = 'bio' rows = '5' v-model="user.bio" placeholder="随便说点什么"></textarea>
+			</div>
+			<input type="submit" class="ui button fluid" value = '注册'>
+		</form>
+	</div>
+</div>
+
+<%- include('footer') %>
