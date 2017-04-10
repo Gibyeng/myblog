@@ -24,10 +24,6 @@ a:hover {
   float: right;
 }
 
-.ui.segment>pre{
-  max-height: 150px;
-  overflow: hidden;
-}
 /* ---------- nav ---------- */
 
 .nav {
@@ -158,4 +154,8 @@ a:hover {
 span.avatar>img{
   width:40px !important;
   height: 40px !important;
+}
+div.posts pre{
+  max-height: 200px;
+  overflow: hidden;
 }
