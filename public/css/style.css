@@ -159,3 +159,9 @@ div.posts pre{
   max-height: 200px;
   overflow: hidden;
 }
+
+/*----------- signin----------*/
+#signinbox .button{
+  background: #5bbd72;
+  color: #ffffff;
+}
